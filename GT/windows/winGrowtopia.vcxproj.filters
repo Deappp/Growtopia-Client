@@ -712,6 +712,9 @@
     <ClCompile Include="..\source\Net\NetControllerLocal.cpp">
       <Filter>source\Net</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\GUI\MiscGUI.cpp">
+      <Filter>source\GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\App.h">
@@ -1175,6 +1178,9 @@
     </ClInclude>
     <ClInclude Include="..\source\Net\NetControllerLocal.h">
       <Filter>source\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\GUI\MiscGUI.h">
+      <Filter>source\GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

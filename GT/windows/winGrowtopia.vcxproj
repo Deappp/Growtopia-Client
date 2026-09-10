@@ -1420,6 +1420,7 @@
     <ClCompile Include="..\source\ENetClient.cpp" />
     <ClCompile Include="..\source\GUI\InputMenu.cpp" />
     <ClCompile Include="..\source\GUI\MainMenu.cpp" />
+    <ClCompile Include="..\source\GUI\MiscGUI.cpp" />
     <ClCompile Include="..\source\Net\NetAvatar.cpp" />
     <ClCompile Include="..\source\Net\NetBase.cpp" />
     <ClCompile Include="..\source\Net\NetControllerBase.cpp" />
@@ -1448,6 +1449,7 @@
     <ClInclude Include="..\source\ENetClient.h" />
     <ClInclude Include="..\source\GUI\InputMenu.h" />
     <ClInclude Include="..\source\GUI\MainMenu.h" />
+    <ClInclude Include="..\source\GUI\MiscGUI.h" />
     <ClInclude Include="..\source\Net\NetAvatar.h" />
     <ClInclude Include="..\source\Net\NetBase.h" />
     <ClInclude Include="..\source\Net\NetControllerBase.h" />
