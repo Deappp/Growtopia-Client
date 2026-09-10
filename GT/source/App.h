@@ -35,6 +35,9 @@ public:
 	Variant * GetVarWithDefault(const string &varName, const Variant &var) {return m_varDB.GetVarWithDefault(varName, var);}
 	int GetSpecial();
 	void OnExitApp(VariantList *pVarList);
+	bool GetScreenShotMode() const { return m_bScreenShotMode; }
+	void SetScreenShotMode(bool b) { m_bScreenShotMode = b; }
+	GameLogicComponent* GetGameLogicComponent() { return m_pGameLogicComponent; }
 
 private:
 
@@ -50,11 +53,13 @@ private:
 	float m_graphicDetail = 1.0f;
 	std::string m_cachePath = "";
 	uint32 m_disconnectionDelayTick = 0;
+	bool m_bScreenShotMode = false;
 };
  
 
 extern App g_App;
 
+GameLogicComponent* GetGameLogic();
 App * GetApp();
 const char * GetAppName();
 const char * GetBundleName();

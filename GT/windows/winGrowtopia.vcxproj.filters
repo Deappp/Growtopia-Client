@@ -164,6 +164,9 @@
     <Filter Include="source\Component">
       <UniqueIdentifier>{945b5ed2-ffd9-494e-ad96-e87cac934189}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\Net">
+      <UniqueIdentifier>{13a5f28b-1b7a-4fdb-abe4-753e245ffd70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\shared\win\app\main.cpp">
@@ -697,6 +700,18 @@
     <ClCompile Include="..\source\TextManager.cpp">
       <Filter>source\Managers</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\Net\NetAvatar.cpp">
+      <Filter>source\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Net\NetBase.cpp">
+      <Filter>source\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Net\NetControllerBase.cpp">
+      <Filter>source\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Net\NetControllerLocal.cpp">
+      <Filter>source\Net</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\App.h">
@@ -1148,6 +1163,18 @@
     </ClInclude>
     <ClInclude Include="..\source\TextManager.h">
       <Filter>source\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Net\NetAvatar.h">
+      <Filter>source\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Net\NetBase.h">
+      <Filter>source\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Net\NetControllerBase.h">
+      <Filter>source\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Net\NetControllerLocal.h">
+      <Filter>source\Net</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

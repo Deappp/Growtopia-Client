@@ -105,6 +105,11 @@ App * GetApp()
 	return g_pApp;
 }
 
+GameLogicComponent* GetGameLogic()
+{
+	return GetApp()->GetGameLogicComponent();
+}
+
 App::App()
 {
 	m_bDidPostInit = false;

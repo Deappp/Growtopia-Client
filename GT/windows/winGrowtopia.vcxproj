@@ -1420,6 +1420,10 @@
     <ClCompile Include="..\source\ENetClient.cpp" />
     <ClCompile Include="..\source\GUI\InputMenu.cpp" />
     <ClCompile Include="..\source\GUI\MainMenu.cpp" />
+    <ClCompile Include="..\source\Net\NetAvatar.cpp" />
+    <ClCompile Include="..\source\Net\NetBase.cpp" />
+    <ClCompile Include="..\source\Net\NetControllerBase.cpp" />
+    <ClCompile Include="..\source\Net\NetControllerLocal.cpp" />
     <ClCompile Include="..\source\TextManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -1444,6 +1448,10 @@
     <ClInclude Include="..\source\ENetClient.h" />
     <ClInclude Include="..\source\GUI\InputMenu.h" />
     <ClInclude Include="..\source\GUI\MainMenu.h" />
+    <ClInclude Include="..\source\Net\NetAvatar.h" />
+    <ClInclude Include="..\source\Net\NetBase.h" />
+    <ClInclude Include="..\source\Net\NetControllerBase.h" />
+    <ClInclude Include="..\source\Net\NetControllerLocal.h" />
     <ClInclude Include="..\source\TextManager.h" />
     <CustomBuild Include="..\..\shared\Audio\AudioManagerFMOD.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Common Debug|Win32'">true</ExcludedFromBuild>
