@@ -40,13 +40,13 @@ private:
 
 	void Save();
 
-	bool m_bDidPostInit;
-	VariantDB m_varDB; //holds all data we want to save/load
-	int m_special;
-	ENetClient* m_pClient = NULL;
 	GameLogicComponent* m_pGameLogicComponent = NULL;
 	AdManager m_adManager{};
-	IAPManager m_iapManager{};
+	ENetClient* m_pClient = NULL;
+	bool m_bDidPostInit = false;
+	VariantDB m_varDB{};
+	int m_special = 0; //i don't know if this exists in gt but i'll keep it for now
+	IAPManager m_IAPManager{};
 	float m_graphicDetail = 1.0f;
 	std::string m_cachePath = "";
 	uint32 m_disconnectionDelayTick = 0;

@@ -255,11 +255,11 @@ void App::Update()
 	BaseApp::Update();
 	GetGamepadManager()->Update();
 	m_adManager.Update();
-	m_iapManager.Update();
+	m_IAPManager.Update();
 
 	if (!m_bDidPostInit)
 	{
-		m_iapManager.Init();
+		m_IAPManager.Init();
 		m_adManager.Init();
 		m_adManager.SetupBanner(CL_Vec2f(480.0f, 72.0f));
 
@@ -320,6 +320,7 @@ void App::OnEnterBackground()
 
 	BaseApp::OnEnterBackground();
 }
+
 void App::OnScreenSizeChange()
 {
 	if (GetArcadeComponent() != NULL)
