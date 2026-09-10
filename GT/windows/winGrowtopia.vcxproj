@@ -128,7 +128,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\win\powerVR\OGLES\Include;..\..\shared\win\powerVR\OGLES\Windows\Include;..\..\shared\win\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\FliteTTS\include;..\..\shared\Irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -151,7 +151,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Common Release|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\win\powerVR\OGLES\Include;..\..\shared\win\powerVR\OGLES\Windows\Include;..\..\shared\win\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\FliteTTS\include;..\..\shared\Irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PlatformPrecomp.h</PrecompiledHeaderFile>
@@ -174,7 +174,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\win\include;..\..\shared\FliteTTS\include;..\..\shared\Irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;C_GL_MODE;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;C_GL_MODE;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -197,7 +197,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release GL|Win32'">
     <ClCompile>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\win\include;..\..\shared\FliteTTS\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;C_GL_MODE;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;C_GL_MODE;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PlatformPrecomp.h</PrecompiledHeaderFile>
@@ -220,7 +220,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\win\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\FliteTTS\include;..\..\shared\Irrlicht\include;$(PalmPDK)\include\SDL;$(PalmPDK)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_WEBOS;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_WEBOS;RT_JPG_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -245,7 +245,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\source;..\..\shared;..\..\shared\win\;..\..\shared\Network\enet\include;..\..\shared\win\powerVR\OGLES\Include;..\..\shared\win\powerVR\OGLES\Windows\Include;..\..\shared\win\include;..\..\shared\util\boost;..\..\shared\ClanLib-2.0\Sources;..\..\shared\FliteTTS\include;..\..\shared\Irrlicht\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;RT_FLASH_TEST;RT_GLES_ADAPTOR_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;RT_RUNS_IN_BACKGROUND;C_DONT_ALLOW_WINDOW_RESIZE;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;BOOST_ALL_NO_LIB;_USE_32BIT_TIME_T;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_NO_DEBUG_HEAP=1;RT_JPG_SUPPORT;RT_FLASH_TEST;RT_GLES_ADAPTOR_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
